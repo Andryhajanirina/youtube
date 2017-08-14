@@ -45,3 +45,36 @@
    height:60px;   /* Height of the footer */
    background:#6cf;
 }
+
+.video {
+   background:#f78aed;
+}
+
+.content-left {
+	background:#5f73a6;	
+	width: 75%;
+	height: 200px;
+	float: left;
+}
+
+.content-right {
+	margin-left: 75%;
+	height: 200px;
+	background:#f71f95;	
+}
+
+.infos-video {
+   background:#930395;	
+}
+
+.infos-video-plus {
+   background:#d0dd44;	
+}
+
+.comments {
+   background:#30e5c5;	
+}
+
+.suggested-videos {
+   background:#ea6632;	
+}
