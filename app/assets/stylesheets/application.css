@@ -33,27 +33,22 @@ body {
     height: 34px;
     width: 100%; /* Full width */
     padding: 8px 30px;
-   	box-sizing: border-box;
+   	box-sizing: border-box; /* Fixes issues with borders and padding */
 }
 
 .navbar {
 
 }
 
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-}
-
 .footer {
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background: #6cf;
+	bottom:0;
+	width:100%;
+	height:114px;
+	background: #fff;
+    border-top: 1px solid #e2e2e2;
+    padding: 20px 30px;   	
+	box-sizing: border-box; /* Fixes issues with borders and padding */
+
 }
 
 /* Main content */
@@ -71,35 +66,51 @@ body {
 	background: #fff;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%; /* largeur obligatoire pour être centré */
-	height: 500px;
+	width: 80%; /* largeur obligatoire pour être centré */
 }
 
 .watch-content {
 	background: #5f73a6;	
-	width: 75%;
 	height: 100%;
 	float: left;
+
 }
 
 .watch-sidebar-content {
-	margin-left: 75%;
 	height: 200px;
 	background:#f71f95;	
+	margin-left: 650px;
+	margin-bottom: 20px;
 }
 
 .watch-header {
    background: #930395;	
+   width: 610px;
+   height: 150px;
+   padding: 15px 15px 5px 15px;
+   margin-bottom: 10px;
 }
 
 .action-panel-details {
    background: #d0dd44;	
+   width:;
+   height:;
+   padding:;
+   margin:;
 }
 
 .watch-discussion {
    background: #30e5c5;	
+   width:;
+   height:;
+   padding:;
+   margin:;
 }
 
 .watch-sidebar-content {
    background: #ea6632;	
+   width: 396px;
+   height: 2235px;
+   padding: 15px 15px 15px 5px;
+   margin-bottom: 10px;
 }
