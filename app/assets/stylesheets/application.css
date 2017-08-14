@@ -23,17 +23,21 @@ body {
 }
 
  /* The navigation bar */
-.navbar {
-    overflow: hidden;
+
+.header {
+	overflow: hidden;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
+    height: 34px;
     width: 100%; /* Full width */
-    padding-bottom: 8px;
-    padding-top: 7px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 8px 30px;
+   	box-sizing: border-box;
+}
+
+.navbar {
+
 }
 
 /* Links inside the navbar */
@@ -42,7 +46,6 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
@@ -55,14 +58,11 @@ body {
 
 /* Main content */
 .main {
-    margin-top: 60px; /* Add a top margin to avoid content overlay */
+    margin-top: 34px; /* Add a top margin to avoid content overlay */
 }
 
 .container {
    	background: black;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%; /* largeur obligatoire pour être centré */
 	text-align: center;
 	height: 480px;
 }

@@ -24,7 +24,7 @@ On va t'aider dans les étapes :
 - ~~fais un nouveaux projet rails `youtube` (tu as cru que tu allais esquiver Rails ? 😎)~~
 - ~~controller home, methode index, toussa toussa~~
 - ~~essaie de voir l'architecture de la page : quels seront les divs qui vont être ensemble, comment seront regroupés les principaux éléments~~
-- ~~fais les divs, positionne-les, donne-leur la bonne taille. ~~
+- ~~fais les divs, positionne-les, donne-leur la bonne taille.~~
   - ~~Conseil : `background-color` sur un div est une arme redoutable pour savoir leur forme, taille, position~~
   - ~~Conseil bis : l'inspecteur d'éléments est ton meilleur ami ✌️~~
 - ~~maintenant fais les éléments dans l'ordre suivant :~~
