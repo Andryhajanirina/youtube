@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+	margin: 0 auto;
+}
+
  /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -21,6 +25,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 60px;
 }
 
 /* Links inside the navbar */
@@ -46,8 +51,24 @@
    background:#6cf;
 }
 
+.box-video {
+	background:black;
+	height: 400px;
+}
+
 .video {
-   background:#f78aed;
+   	background:#f78aed;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%; /* largeur obligatoire pour être centré */
+	height: 100%;
+}
+
+.content {
+	background:#fff;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%; /* largeur obligatoire pour être centré */
 }
 
 .content-left {
@@ -55,7 +76,8 @@
 	width: 75%;
 	height: 200px;
 	float: left;
-}
+/*	padding: 20px;
+*/}
 
 .content-right {
 	margin-left: 75%;
