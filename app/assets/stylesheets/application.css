@@ -14,13 +14,18 @@
  *= require_self
  */
 
-body {
+* {
+	box-sizing: border-box; /* Fixes issues with borders and padding */
 	margin: 0 auto;
 	border: 0;
 	padding: 0;
-	background: #F1F1F1;
 	font-family: "YouTube Noto",Roboto,arial,sans-serif;
 }
+
+body {
+	background: #F1F1F1;
+}
+
 
  /* The navigation bar */
 
@@ -28,52 +33,41 @@ body {
 	overflow: hidden;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed;
+    top: 0;
     height: 34px;
-    width: 100%; /* Full width */
+    width: 100%;
     padding: 8px 30px;
-   	box-sizing: border-box; /* Fixes issues with borders and padding */
 }
 
 .navbar {
 
 }
 
-.footer {
-	bottom:0;
-	width:100%;
-	height:114px;
-	background: #fff;
-    border-top: 1px solid #e2e2e2;
-    padding: 20px 30px;   	
-	box-sizing: border-box; /* Fixes issues with borders and padding */
-
-}
-
 /* Main content */
 .main {
     margin-top: 34px; /* Add a top margin to avoid content overlay */
+    margin-bottom: 30px;
 }
 
 .container {
    	background: black;
 	text-align: center;
 	height: 480px;
+	margin-bottom: 10px;
 }
 
 .watch-main {
 	background: #fff;
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%; /* largeur obligatoire pour être centré */
+	margin: 0 107px;
+	text-align: center;
 }
 
 .watch-content {
 	background: #5f73a6;	
-	height: 100%;
 	float: left;
-
+	width: 640px;
+	margin-bottom: 50px;
 }
 
 .watch-sidebar-content {
@@ -85,7 +79,7 @@ body {
 
 .watch-header {
    background: #930395;	
-   width: 610px;
+   width: 100%;
    height: 150px;
    padding: 15px 15px 5px 15px;
    margin-bottom: 10px;
@@ -93,24 +87,34 @@ body {
 
 .action-panel-details {
    background: #d0dd44;	
-   width:;
-   height:;
-   padding:;
-   margin:;
+   width: 100%;
+   height: 92px;
+   padding: 15px;
+   margin-bottom: 10px;
 }
 
 .watch-discussion {
    background: #30e5c5;	
-   width:;
-   height:;
-   padding:;
-   margin:;
+   width: 100%;
+   height: 4944px ;
+   padding: 15px;
+   margin-bottom: 10px;
 }
 
 .watch-sidebar-content {
    background: #ea6632;	
-   width: 396px;
-   height: 2235px;
+   width: 416px;
+   height: 2265px;
    padding: 15px 15px 15px 5px;
    margin-bottom: 10px;
+}
+
+.footer {
+	bottom:0;
+	clear: both;
+	width:100%;
+	height:114px;
+	background: #fff;
+    border-top: 1px solid #e2e2e2;
+    padding: 20px 30px;   	
 }
