@@ -15,7 +15,7 @@
  */
 
 * {
-	box-sizing: border-box; /* Fixes issues with borders and padding */
+	box-sizing: border-box; /* Fix issues with borders and padding */
 	margin: 0 auto;
 	border: 0;
 	padding: 0;
@@ -26,16 +26,32 @@ body {
 	background: #F1F1F1;
 }
 
+ul {
+  list-style: none;
+}
 
- /* The navigation bar */
+h4 {
+	font-size: 13px;
+    color: #222;
+}
+
+label {
+	font-size: 13px;
+	color: #767676;
+}
+
+a {
+	text-decoration: none;
+}
 
 .header {
+	position: fixed;
+    top: 0;
+    z-index: 10;
 	overflow: hidden;
     background-color: #fff;
     border-bottom: 1px solid #e8e8e8;
-    position: fixed;
-    top: 0;
-    height: 34px;
+    height: 34px; /* To avoid overlay, change .main margin-top accordingly */
     width: 100%;
     padding: 8px 30px;
 }
@@ -46,7 +62,7 @@ body {
 
 /* Main content */
 .main {
-    margin-top: 34px; /* Add a top margin to avoid content overlay */
+    margin-top: 34px; /* To avoid overlay, put same value as for .header height */
     margin-bottom: 30px;
 }
 
@@ -59,21 +75,12 @@ body {
 
 .watch-main {
 	margin: 0 107px;
-	text-align: center;
 }
 
 .watch-content {
-/*	background: #5f73a6;	
-*/	float: left;
+	float: left;
 	width: 640px;
 	margin-bottom: 50px;
-}
-
-.watch-sidebar-content {
-	height: 200px;
-	background:#f71f95;	
-	margin-left: 650px;
-	margin-bottom: 20px;
 }
 
 .watch-header {
@@ -93,29 +100,145 @@ body {
 }
 
 .watch-discussion {
-   background: #30e5c5;	
-   width: 100%;
-   height: 4944px ;
-   padding: 15px;
-   margin-bottom: 10px;
+	background: #30e5c5;	
+	width: 100%;
+	height: 4944px ;
+	padding: 15px;
+	margin-bottom: 10px;
 }
 
 .watch-sidebar-content {
-   background: #ea6632;	
-   width: 416px;
-   height: 2265px;
-   padding: 15px 15px 15px 5px;
-   margin-bottom: 10px;
+	background: #fff;	
+	width: 416px;
+	height: 2265px;
+	padding: 15px 15px 15px 10px;
+	margin-left: 650px;
+	margin-bottom: 20px;
+}
+
+.watch-sidebar-head {
+	margin: 0 5px 5px 5px;
+}
+
+.autoplay-bar {
+	display: inline-block;
+	position: relative; /* Display autoplay-options on the right */
+	background: #fff;
+	width: 391px;
+	height: 120px;
+	margin: 0 0 15px;
+}
+
+.autoplay-info-icon {
+	display: inline-block;
+	vertical-align: middle;
+	opacity: .5;
+	width: 16px;
+	height: 16px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -30px -342px;
+	background-size: 1096px 644px;
+}
+
+.autoplay-options {
+	display: inline-block;
+	position: absolute; /* Display autoplay-options on the right */
+	top: 0;
+	right: 0;
+}
+
+.video-list-item {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.video-list-item a, .video-list-item a:visited {
+	color: #333;
+}
+
+.video-list-item a:hover {
+	color: #036;
+}
+
+.content-wrapper {
+	margin-left: 181px;
+	width: 210px;
+	height: 94px;
+}
+
+.item-title {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.item-author, .item-stats {
+	display: block;
+	color: #767676;
+	font-size: 11px;
+}
+
+.thumb-wrapper {
+	position: absolute;
+	top: 0;
+	margin: 0 5px;
+	width: 168px;
+	height: 94px;
+}
+
+.thumb {
+	height: 94px;
+}
+
+.video-time {
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	padding: 0 4px;
+	font-size: 11px;
+    background-color: #000;
+	color: #fff!important;
+	height: 14px;
+	line-height: 14px;
+	opacity: .75;
+	vertical-align: top;
+}
+
+.watch-sidebar-separation-line {
+	border-bottom: 1px solid #e2e2e2;
+	margin: 0 5px 15px;
+}
+
+.watch-related {
+	position: relative; /* Display button 'PLUS' at the bottom */
+   	background: #d0dd44;	
+	width: 391px;
+	margin-top: 15px;
+}
+
+.watch-more-related-button {
+	position: absolute; /* Display button 'PLUS' at the bottom */
+	bottom: 0;
+    background: #30e5c5;	
+	width: 391px;
+	height: 28px; /* To align text vertically, change line-height accordingly */
+	padding: 0 10px;
+	border: 1px;
+	margin-top: 10px;
+	border-top: 1px solid #e2e2e2;
+	text-transform: uppercase;
+	border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+    line-height:28px /* To align text vertically, put same value as for box-height */
 }
 
 .box {
 	box-shadow: 0 1px 2px rgba(0,0,0,.1);
-
 }
 
 .footer {
 	bottom:0;
-	clear: both;
+	clear: both; /* Keep footer at the bottom of the page */
 	width:100%;
 	height:114px;
 	background: #fff;
