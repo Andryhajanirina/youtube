@@ -20,7 +20,6 @@
 	border: 0;
 	padding: 0;
 	font-family: "YouTube Noto",Roboto,arial,sans-serif;
-	font-size: 11px;
 }
 
 body {
@@ -45,6 +44,7 @@ h4 {
 a {
 	text-decoration: none;
 	cursor: pointer;
+	color: #333;
 }
 
 div {
@@ -484,6 +484,60 @@ div {
 	background: #ccc;
 }
 
+/* DESCRIPTION BOX */
+
+.action-panel-details {
+	position: relative;
+	background: #fff;	
+	width: 100%;
+	height: 122px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.watch-description {
+	display: inline-block; /* Display margin-bottom correctly */
+	margin-bottom: 28px; /* To avoid overlay, put same value as for .watch-more-related-button height */
+}
+
+.watch-time-text {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 13px;
+    color: #333;
+    line-height: 14px;
+}
+
+.watch-description-text {
+	max-height: 42px;
+    overflow: hidden;
+    padding-top: 4px;
+    color: #333;
+    line-height: 14px;
+    font-size: 13px;
+}
+
+.watch-description-extras {
+	margin-top: 8px;
+}
+
+.expand-button {
+	position: absolute; /* Display button 'PLUS' at the bottom */
+	bottom: 0;
+	width: 588px;
+	height: 28px; /* To avoid overlay, change .video-list margin-bottom accordingly */
+	line-height:28px; /* To align text vertically, put same value as for box-height */
+	padding: 0 10px;
+	border: 1px;
+	margin-top: 10px;
+	border-top: 1px solid #e2e2e2;
+	text-transform: uppercase;
+	border-radius: 2px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #767676;
+    text-align: center;
+}
 
 /* SHADOWS */
 
@@ -504,14 +558,6 @@ div {
 }
 
 /* ELEMENTS TO MODIFY */
-
-.action-panel-details {
-   background: #d0dd44;	
-   width: 100%;
-   height: 92px;
-   padding: 15px;
-   margin-bottom: 10px;
-}
 
 .watch-discussion {
 	background: #30e5c5;	
