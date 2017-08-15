@@ -29,7 +29,7 @@ On va t'aider dans les étapes :
   - ~~Conseil bis : l'inspecteur d'éléments est ton meilleur ami ✌️~~
 - ~~maintenant fais les éléments dans l'ordre suivant :~~
   - ~~la vidéo principale, dans laquelle tu embed une vidéo de ton choix~~
-  - la barre latérale, dans laquelle tu vas mettre les images des _thumbnails_ des vidéos, et le texte sur le côté (titre, auteur, etc)
+  - ~~la barre latérale, dans laquelle tu vas mettre les images des _thumbnails_ des vidéos, et le texte sur le côté (titre, auteur, etc)~~
   - le titre de la vidéo principale, la description
 - Tu commences à avoir une page sympa. Tu peux maintenant mettre un commentaire ou deux pour la forme, et t'attaquer au header
 - Si tu te sens très chaud, tu peux faire l'un de ces deux bonus-stage :
