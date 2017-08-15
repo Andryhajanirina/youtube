@@ -20,6 +20,7 @@
 	border: 0;
 	padding: 0;
 	font-family: "YouTube Noto",Roboto,arial,sans-serif;
+	font-size: 11px;
 }
 
 body {
@@ -30,19 +31,26 @@ ul {
   list-style: none;
 }
 
+h1 {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+}
+
 h4 {
 	font-size: 13px;
     color: #222;
 }
 
-label {
-	font-size: 13px;
-	color: #767676;
-}
-
 a {
 	text-decoration: none;
 }
+
+div {
+	display: block;
+}
+
+/* HEADER */
 
 .header {
 	position: fixed;
@@ -56,15 +64,12 @@ a {
     padding: 8px 30px;
 }
 
-.navbar {
-
-}
-
-/* Main content */
 .main {
     margin-top: 34px; /* To avoid overlay, put same value as for .header height */
     margin-bottom: 30px;
 }
+
+/* VIDEO */
 
 .container {
    	background: black;
@@ -83,29 +88,7 @@ a {
 	margin-bottom: 50px;
 }
 
-.watch-header {
-   background: #930395;	
-   width: 100%;
-   height: 150px;
-   padding: 15px 15px 5px 15px;
-   margin-bottom: 10px;
-}
-
-.action-panel-details {
-   background: #d0dd44;	
-   width: 100%;
-   height: 92px;
-   padding: 15px;
-   margin-bottom: 10px;
-}
-
-.watch-discussion {
-	background: #30e5c5;	
-	width: 100%;
-	height: 4944px ;
-	padding: 15px;
-	margin-bottom: 10px;
-}
+/* SIDEBAR */
 
 .watch-sidebar-content {
 	background: #fff;	
@@ -120,12 +103,25 @@ a {
 }
 
 .autoplay-bar {
-	display: inline-block;
 	position: relative; /* Display autoplay-options on the right */
 	background: #fff;
 	width: 391px;
 	height: 120px;
 	margin: 0 0 15px;
+}
+
+.autoplay-options {
+	position: absolute; /* Display autoplay-options on the right */
+	top: 0;
+	right: 0;
+	height: 16px;
+	line-height: 16px;
+}
+
+.autoplay-label {
+	display: inline-block;
+	font-size: 13px;
+	color: #767676;
 }
 
 .autoplay-info-icon {
@@ -136,13 +132,11 @@ a {
 	height: 16px;
 	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -30px -342px;
 	background-size: 1096px 644px;
+	margin: 0 4px 3px 4px;
 }
 
-.autoplay-options {
+.checkbox-on-off {
 	display: inline-block;
-	position: absolute; /* Display autoplay-options on the right */
-	top: 0;
-	right: 0;
 }
 
 .video-list {
@@ -245,9 +239,246 @@ a {
     color: #767676;
 }
 
+/* HEADER BOX */
+
+.watch-header {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	height: 170px;
+	padding: 15px 15px 5px 15px;
+	margin-bottom: 10px;
+}
+
+.watch-headline-title {
+	margin-right: 153px;
+	word-wrap: break-word;
+}
+
+.watch-user-header {
+	height: 68px;
+	padding: 10px 0;
+}
+
+.user-photo {
+	float: left;
+}
+
+.user-info {
+	width: 380px;
+	height: 22px;
+	margin-left: 58px;
+}
+
+.user-info a {
+	display: inline-block;
+	color: #333;
+	vertical-align: top;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.user-info a:hover {
+	text-decoration: underline;
+}
+
+.subscribe-button {
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+	padding: 0 8px 0 5.5px;
+	height: 24px;
+	background-color: #e62117;
+	border: solid 1px transparent;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+}
+
+.subscribe-icon {
+	display: inline-block;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -57px -206px;
+    background-size: 548px 322px;
+    width: 16px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+.subscribe-content {
+	display: inline-block;
+	color: #fefefe;
+	font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    vertical-align: middle;
+   	line-height: 24px;
+}
+
+.subscriber-count {
+	display: inline-block;
+	margin-left: -1px;
+	height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    padding: 0 6px 0 7px;
+    color: #737373;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    border-left: 0;
+    background-color: #fafafa;
+    border-radius: 0 2px 2px 0;
+}
+
+.watch-action-buttons {
+	position: relative;
+	height: 34px;
+	padding-top: 5px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.other-actions {
+	float: left;
+}
+
+.other-action-button {
+	cursor: pointer;
+	display: inline-block;
+	height: 28px;
+	padding: 0 10px;
+	background: none;
+    border: none;
+    box-shadow: none;
+    opacity: .5;
+    outline: 0;
+    font-weight: 600;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.add-button {
+	margin-right: 6px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -101px 0;
+    background-size: 548px 322px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.share-button {
+	margin-right: 6px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -375px -186px;
+    background-size: 548px 322px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.plus-button {
+	margin-right: 6px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -193px 0;
+    background-size: 548px 322px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.like-actions {
+	float: right;
+}
+
+.like-action-button {
+	cursor: pointer;
+    display: inline-block;
+    opacity: .5;
+    height: 28px;
+    padding: 0;
+   	background: none;
+    border: none;
+    box-shadow: none;
+    padding-left: 10px;
+    outline: 0;
+    font-weight: 600;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.like-button {
+	margin-right: 6px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -123px 0;
+    background-size: 548px 322px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dislike-button {
+	margin-right: 6px;
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -441px -208px;
+    background-size: 548px 322px;
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.watch-view-count {
+	position: absolute;
+    bottom: 33px;
+    right: 0;
+    min-width: 160px;
+	line-height: 24px;
+    max-height: 24px;
+    margin-bottom: 2px;
+
+}
+
+.view-count {
+	text-align: right;
+    font-size: 19px;
+    color: #666;
+}
+
+.video-extras-sparkbars {
+	height: 2px;
+    overflow: hidden;
+}
+
+.sparkbar-likes {
+	width: 94.976076555%;
+	float: left;
+	height: 2px;
+	background: #167ac6;
+}
+
+.sparkbar-dislikes {
+	width: 5.02392344498%;
+	float: left;
+	height: 2px;
+	background: #ccc;
+}
+
+
+/* SHADOWS */
+
 .box {
 	box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
+
+/* FOOTER */
 
 .footer {
 	bottom:0;
@@ -257,4 +488,22 @@ a {
 	background: #fff;
     border-top: 1px solid #e2e2e2;
     padding: 20px 30px;   	
+}
+
+/* ELEMENTS TO MODIFY */
+
+.action-panel-details {
+   background: #d0dd44;	
+   width: 100%;
+   height: 92px;
+   padding: 15px;
+   margin-bottom: 10px;
+}
+
+.watch-discussion {
+	background: #30e5c5;	
+	width: 100%;
+	height: 4944px ;
+	padding: 15px;
+	margin-bottom: 10px;
 }
