@@ -539,6 +539,15 @@ div {
     text-align: center;
 }
 
+.expand-button a {
+	color: #767676;
+}
+
+.expand-button a:hover {
+	color: #222;
+}
+
+
 /* SHADOWS */
 
 .box {
