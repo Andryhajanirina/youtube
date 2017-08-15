@@ -296,6 +296,10 @@ div {
 	box-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
+.subscribe-button:hover {
+	background-color: #cc181e;
+}
+
 .subscribe-icon {
 	display: inline-block;
 	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -57px -206px;
@@ -359,6 +363,10 @@ div {
     vertical-align: middle;
 }
 
+.other-action-button:hover {
+	opacity: 0.6;
+}
+
 .add-button {
 	margin-right: 6px;
 	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-2x-vfl-xrsMu.webp) -101px 0;
@@ -412,6 +420,10 @@ div {
     text-decoration: none;
     vertical-align: middle;
     border-radius: 2px;
+}
+
+.like-action-button:hover {
+	opacity: 0.6;
 }
 
 .like-button {
